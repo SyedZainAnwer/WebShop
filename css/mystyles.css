@@ -1,0 +1,27 @@
+body {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+}
+
+p {
+    text-align: right;
+}
+
+/* Default link styles */
+a {
+    color: blue;
+    text-decoration: none; 
+}
+
+/* Hover effect for links */
+a:hover {
+    color: darkblue;
+    text-decoration: underline;  
+}
+
+/* Style table headers */
+th {
+    background-color: lightgray;
+  }
