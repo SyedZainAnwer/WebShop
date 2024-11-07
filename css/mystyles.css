@@ -28,11 +28,22 @@ p {
     color: #8f8f8f;
 }
 
+
+
+
+
+
+
 /* Containers */
 .container-fluid {
     padding: 1%;
     background-color: #0a192c;
 }
+
+
+
+
+
 
 /* Navigation Bar */
 .navbar {
@@ -86,11 +97,22 @@ p {
     color: #FF6500;
 }
 
+
+
+
+
+
+
 /* Title */
 #title {
     background-color: #1E3E62;
     color: #F3F3E0;
 }
+
+
+
+
+
 
 /* Categories Section */
 #categories {
@@ -161,6 +183,11 @@ p {
 }
 
 
+
+
+
+
+
 /* Footer */
 #footer {
     background-color: #0a192c;
@@ -172,7 +199,12 @@ p {
     color: white;
 }
 
-/* Additional styles for general layout */
+
+
+
+
+
+/* About us page */
 .top-container {
     background-color: #F3F3E0;
     color: #1E3E62;
@@ -186,7 +218,7 @@ p {
     margin: 0 auto;
     line-height: 2;
     color: #ffffff;
-    padding: 100px 50px;
+    padding: 100px 150px;
     text-align: center;
     background-color: #0B192C;
 }
@@ -257,4 +289,79 @@ p {
     color: #FF6500; 
     border-color: #FF6500; 
     background-color: transparent; 
+}
+
+
+
+
+
+
+/* Container for the entire product section */
+.product-section {
+    padding: 30px;
+    text-align: center;
+    background-color: #F3F3E0;
+}
+
+/* Style for the section heading */
+.product-section h2 {
+    margin-bottom: 3%;
+    font-size: 2rem;
+    color: #0B192C;
+}
+
+/* Flex layout for product items */
+.product-list {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+/* Individual product item styling */
+.product-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 9px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 220px; /* Set a fixed width for uniformity */
+    position: relative;
+}
+
+/* Hover effect for the entire product item */
+.product-item:hover {
+    transform: scale(1.05); 
+}
+
+
+/* Styling for product images */
+.product-item img {
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.2s ease;
+}
+
+/* Product title styling */
+.product-item h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #0B192C;
+}
+
+/* Product description styling, positioned below each item */
+.product-description {
+    font-size: 0.9rem;
+    color: #1E3E62 ;
+    margin-top: 10px;
+}
+
+/* Product link styling */
+.product-description a {
+    color: #FF6500;
+    text-decoration: none;
+}
+
+.product-description a:hover {
+    text-decoration: underline;
 }
