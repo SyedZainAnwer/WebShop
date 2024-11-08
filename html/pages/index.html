@@ -2,90 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZAA Labs</title>
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="/css/mystyles.css">
+    <link rel="stylesheet" href="/css/mystyles.css" />
 
     <!-- Montserrat Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Font Awesome (For Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
-
-    <!--Nav Bar Container-->
-    <section id="title">
-
-        <div class="container-fluid">
-            <!-- Nav Bar -->
-            <nav class="navbar">
-                <a class="navbar-brand" href="index.html">
-                    <img src="/assets/images/Logo/Pinterest-logo.png" alt="Cyber Station Logo" class="navbar-logo">
-                </a>
-                <div class="navbar-links">
-                    <div class="nav-item">
-                        <a href="../pages/sellerInfo/about.html">About Us</a>
+    <div class="main_container">
+        <!--Nav Bar Container-->
+        <section id="title">
+            <div class="container-fluid">
+                <!-- Nav Bar -->
+                <nav class="navbar">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/assets/images/Logo/Pinterest-logo.png" alt="Cyber Station Logo"
+                            class="navbar-logo" />
+                    </a>
+                    <div class="navbar-links">
+                        <div class="nav-item">
+                            <a href="../pages/sellerInfo/about.html">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="../pages/auth/login.html">Log In</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="../pages/auth/register.html">Register</a>
+                        </div>
                     </div>
-                    <div class="nav-item">
-                        <a href="../pages/auth/login.html">Log In</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="../pages/auth/register.html">Register</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
+                </nav>
+            </div>
+        </section>
 
-    <!-- Categories Section -->
+        <!-- Categories Section -->
 
-    <section id="categories">
-        <!-- Heading-->
         <div class="categories heading">
             <h3>Explore Our Parts.</h3>
         </div>
+        <section id="categories">
+            <!-- Heading-->
 
-        <div class="row text-center">
+            <div class="row text-center">
+                <!-- Graphics Cards -->
+                <div class="categories-item">
+                    <a href="./categories/graphicsCardsList.html" class="categories-link">
+                        <i class="fa-solid fa-fax categories-icon fa-4x"></i>
+                        <h3>Graphics Cards</h3>
+                    </a>
+                </div>
 
-            <!-- Graphics Cards -->
-            <div class="categories-item">
-                <a href="./categories/graphicsCardsList.html" class="categories-link">
-                    <i class="fa-solid fa-fax categories-icon fa-4x"></i>
-                    <h3>Graphics Cards</h3>
-                </a>
+                <!-- Laptops -->
+                <div class="categories-item">
+                    <a href="./categories/laptopsList.html" class="categories-link">
+                        <i class="fa-solid fa-laptop categories-icon fa-4x"></i>
+                        <h3>Laptops</h3>
+                    </a>
+                </div>
+
+                <!-- Keyboards -->
+                <div class="categories-item">
+                    <a href="./categories/keyboardsList.html" class="categories-link">
+                        <i class="fa-regular fa-keyboard categories-icon fa-4x"></i>
+                        <h3>Keyboards</h3>
+                    </a>
+                </div>
             </div>
+        </section>
+    </div>
 
-            <!-- Laptops -->
-            <div class="categories-item">
-                <a href="./categories/laptopsList.html" class="categories-link">
-                    <i class="fa-solid fa-laptop categories-icon fa-4x"></i>
-                    <h3>Laptops</h3>
-                </a>
-            </div>
-
-            <!-- Keyboards -->
-            <div class="categories-item">
-                <a href="./categories/keyboardsList.html" class="categories-link">
-                    <i class="fa-regular fa-keyboard categories-icon fa-4x"></i>
-                    <h3>Keyboards</h3>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <footer id="footer">
+    <!-- <footer id="footer">
         <p class="footer-text">© Copyright 2024 CyberStation</p>
-    </footer>
-
+    </footer> -->
 </body>
 
 </html>
