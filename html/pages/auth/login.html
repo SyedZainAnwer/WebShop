@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Webshop Login</title>
+    <title>ZAA Login</title>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="/css/mystyles.css">
 
@@ -17,25 +17,57 @@
 </head>
 
 <body>
-    <container>
-        <h1>Webshop Login</h1>
-        <input type="text" placeholder="Username" name="username" />
-        <br>
-        <input type="password" placeholder="Password" name="Password" />
-        <br>
-
-        <button> Login </button> <br>
-
-        <span>
-            No account?<a href="./register.html">Register now</a>
-        </span>
-    </container>
-
-    <div>
-        <a href="../index.html">
-            <button>Back to home page</button>
-        </a>
+    <div class="auth_main_container">
+        <h3>Sign In</h3>
+        <div class="auth_area">
+            <form action="#">
+                <div class="username_input_are">
+                    <label>Username:</label> <br>
+                    <input type="text" placeholder="Username" name="username" class="input_field" />
+                </div>
+                <div class="password_input_area">
+                    <label>Password:</label> <br>
+                    <input type="text" placeholder="Username" name="username" class="input_field" />
+                </div>
+    
+                <div class="btn_area">
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
 </html>
+
+<!-- 
+
+<div class="auth-container">
+        <h1>Sign In</h1>
+        <div class="auth-field">
+            <form>
+
+                <div class="auth-info">    
+                    <label>Username:</label> <br>
+                    <input type="text" placeholder="Username" name="username" />
+                </div>
+
+                <div class="auth-info">
+                    <label>Password:</label> <br>
+                    <input type="password" placeholder="Password" name="Password" />
+                </div>
+
+                <button class="auth-btn"> Login </button> 
+            </form>    
+            <br>
+
+            <span>
+                No account? <a href="./register.html">Register now</a>
+            </span>
+            <br>
+            <a href="../index.html">
+                Back to Homepage
+            </a>
+        </div>
+    </div>
+-->

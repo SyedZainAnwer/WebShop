@@ -387,3 +387,32 @@ p {
 .product-description a:hover {
     text-decoration: underline;
 }
+=======
+.auth_main_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth_area {
+    border: 1px solid #D3D3D3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input_field {
+    padding: 5px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.password_input_area {
+    margin-top: 10px;
+}
+
+.btn_area {
+    margin-top: 20px;
+}
