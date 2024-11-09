@@ -1,225 +1,28 @@
-/* Headings */
-
-body {
-    font-family: "Montserrat", serif;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-  }
-  
-  h2 {
-      font-family: 'Montserrat';
-      font-weight: bold;
-      font-size: 2rem;
-      line-height: 1.5;
-  }
-  
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-  }
-  
-  p {
-    color: #8f8f8f;
-  }
-
-/* Default link styles */
-a {
-    color: rgb(18, 18, 177);
-    text-decoration: none;
-}
-
-/* Hover effect for links */
-a:hover {
-    color: darkblue;
-    text-decoration: underline;
-}
-
-/* Style table headers */
-th {
-    background-color: lightgray;
-}
-
-/* Containers */
-
-.container-fluid {
-    padding: 3% 15% 7%;
-  }
-
-/* Navigation Bar */
-
-.navbar-brand {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-}
-
-.navbar {
-    font-size: 1.25rem;
-    padding: 0 0 4.5rem 0;
-}
-
-.nav-item {
-    padding: 0 18px;
-}
-
-.nav-item {
-    font-family: "Montserrat";
-    font-weight: 100;
-    font-size: 1rem;
-}
-
-/* Title */
-
-#title {
-    background-color: #405796;
-    color: white;
-  }
-
-
-
-  /* ABOUT US PAGE  F3F3E0  133E87 */ 
-
-  /* Styling for the top container */
-.top-container {
-    background-color: #F3F3E0; /* Light blue background */
-    color: #1E3E62;
-    padding: 50px 20px; /* Add some padding */
-    text-align: center; /* Center align text */
-}
-
-/* Styling for the section within the top container */
-#about h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
-    line-height: 1.5;
-}
-
-.about-us-description p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    margin: 0 auto; /* Center the paragraph */
-    line-height: 1.8; /* Increase space between lines */
-    color: #ffffff;
-    padding: 100px 50px; /* Add some padding */
-    text-align: center; /* Center align text */
-    background-color: #0B192C;
-}
-
-.contact-us {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    margin: 0 auto; /* Center the paragraph */
-    line-height: 1.8; /* Increase space between lines */
-    color: #FF6500;
-    padding: 50px; /* Add some padding */
-    text-align: center; /* Center align text */
-    background-color: #F3F3E0;
-}
-
-.contact-us h2{
-    font-size: 3rem;
-    color: #1E3E62;
-}
-
-
-/* #footer {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  } */
-
-
-.contact-us a {
-    color: 1E3E62;
-}
-
-.bottom-container {
-    background-color: #F3F3E0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    text-align: center; /* Center align text */
-    padding: 20px 20px 30px; /* Add some padding */
-}
-
-.home-button {
-    margin: 1%;
-    font-size: 1.25rem
-}
-
-.auth-field{
-    color:rgb(11, 25, 44);
-    border: solid #bfbfbf;
-    padding: 5px;
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.91);
-    justify-content:center;
-    align-items:center;
-    border-radius: 20px;
-    /* box-shadow: 0 0 10px #1E3E62; */
-}
-
-#auth-body{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
+.auth_main_container {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0; 
+    flex-direction: column;
 }
 
-input{
-    font-family: 'Montserrat', sans-serif;
-    width: auto;
-    margin: 5px;
+.auth_area {
+    border: 1px solid #D3D3D3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input_field {
     padding: 5px;
-    font-size: 15px;
-    /* border-radius: 5px; */
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    margin-top: 3px;
 }
 
-input:hover{
-    border-color:#bfbfbf;
-}
-
-.auth-btn{
-    font-family: 'Montserrat', sans-serif;
-    width: 45%;
+.password_input_area {
     margin-top: 10px;
-    padding: 5px;
-    font-size: 15px;
-    /* border: inherit; */
-    /* border-radius: 5px; */
 }
 
-.auth-btn:hover {
-    background-color: #FF6500;
-    transform:scale(1.1);
-    transition: 0.5s;
+.btn_area {
+    margin-top: 20px;
 }
-
-.auth-info {
-    margin: 5%;
-    align-items: center;
-}
-
-label{
-    width: 200px;
-    text-align: left;
-    color: #1E3E62;
-}
-
-.auth-container h1{
-    margin: auto;
-    color: #1E3E62;
-}
-
-span {
-    color: #1E3E62;
-}
-
