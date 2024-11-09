@@ -14,25 +14,65 @@
             rel="stylesheet">
 </head>
 <body>
-    <h2><u>Here is a list of all available keyboards</u></h2>
 
-    <!-- 1st Item -->
-    <img src="../../../assets/images/keyboards/cynosa_v2.png" alt="cynosa_v2" width="200px">
-    <h4>Razer Cynosa V2</h4>
-    <p>For more product details <a href="../products/keyboard/cynosa_201.html" target="_blank">click here</a></p>
+    <!--Nav Bar Container-->
+    <section id="title">
 
-    <br>
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="/assets/images/Logo/Pinterest-logo.png" alt="Cyber Station Logo" class="navbar-logo">
+                </a>
+                <div class="navbar-links">
+                    <div class="nav-item">
+                        <a href="../../pages/sellerInfo/about.html">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../pages/auth/login.html">Log In</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../pages/auth/register.html">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
 
-    <!-- 2nd Item -->
-    <img src="../../../assets/images/keyboards/pro_x60.png" alt="pro_x60" width="200px">
-    <h4>Logitech X60 pro</h4> 
-    <p>For more product details <a href="../products/keyboard/x60_202.html" target="_blank">click here</a></p>
+    <div class="product-section">
+        <h2>Keyboards</h2>
+    
+        <div class="product-list">
+            <!-- 1st Product -->
+            <div class="product-item">
+                <div class="product-content">
+                <img src="../../../assets/images/keyboards/cynosa_v2.png" alt="cynosa_v2" width="200px">
+                <h4>Razer Cynosa V2</h4>
+            </div>
+                <p class="product-description">For more product details <a href="../products/keyboard/cynosa_201.html" target="_blank">click here</a></p>
+            </div>
+    
+            <!-- 2nd Product -->
+            <div class="product-item">
+                <div class="product-content">
+                <img src="../../../assets/images/keyboards/pro_x60.png" alt="pro_x60" width="200px">
+                <h4>Logitech X60 pro</h4>
+            </div>
+                <p class="product-description">For more product details <a href="../products/keyboard/x60_202.html" target="_blank">click here</a></p>
+            </div>
+            
+            <!-- Add more products as needed -->
+        </div>
+    </div>
 
-    <br>
-    <div>
+    <div class="bottom-container">
         <a href="../index.html">
-            <button>Back to home page</button>
+            <button type="button" class="btn home-button"> Back To Home</button>
         </a>
     </div>
+
+    <footer id="footer">
+        <p class="footer-text">© Copyright 2024 CyberStation</p>
+    </footer>
 </body>
 </html>
