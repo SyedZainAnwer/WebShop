@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Webshop Login</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <container>
-            <h1>Webshop Login</h1>
-            <input
-                type="text"
-                placeholder="Username"
-                name="username"    
-            />
-            <br>
-            <input
-                type="password"
-                placeholder="Password" 
-                name="Password"    
-            />
-            <br>
+    <title>ZAA Login</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="/css/mystyles.css">
 
-            <button> Login </button> <br>
+    <!-- Mont Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
 
-            <span>
-                No account?<a href="./register.html">Register now</a>
-            </span>
-        </container>
-    </body>
+<body id="auth-body">
+    <div class="auth-container">
+        <h1>Sign In</h1>
+        <form>
+
+            <div class="auth-info">    
+                <label>Username:</label>
+                <input type="text" placeholder="Username" name="username" />
+            </div>
+
+            <div class="auth-info">
+                <label>Password:</label>
+                <input type="password" placeholder="Password" name="Password" />
+            </div>
+
+            <button class="auth-btn"> Login </button> 
+        </form>    
+        <br>
+
+        <span>
+            No account? <a href="./register.html">Register now</a>
+        </span>
+        <br>
+        <a href="../index.html">
+            Back to Homepage
+        </a>
+    </div>
+    
+</body>
+
 </html>
