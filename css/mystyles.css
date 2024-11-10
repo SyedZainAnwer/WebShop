@@ -43,6 +43,7 @@ p {
 .main_container {
     min-height: 100vh;
     background-color: #F3F3E0;
+    display: flex;
 }
 
 
@@ -106,6 +107,7 @@ p {
 #title {
     background-color: #1E3E62;
     color: #F3F3E0;
+    width: 100%;
 }
 
 
@@ -513,4 +515,82 @@ p {
 .btn:hover {
     background-color: #1E3E62;
     border-color: #1E3E62;
+}
+
+.bg-color {
+    background-color: #F3F3E0;
+}
+
+/* Specific styles for Razer Cynosa V2 page */
+
+/* Main container for the product page */
+.product-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #F3F3E0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Styling for the product image */
+.product-image {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product title styling */
+.product-title {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2.5rem;
+    color: #0a192c;
+    margin-bottom: 10px;
+}
+
+/* Product information styling */
+.product-info {
+    font-size: 1.1rem;
+    color: #1E3E62;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.product-info strong {
+    color: #FF6500;
+}
+
+/* Buttons for the product page */
+.product-button {
+    background-color: #FF6500;
+    color: #F3F3E0;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #1E3E62;
+}
+
+.back-button {
+    background-color: #1E3E62;
+    color: #F3F3E0;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #FF6500;
 }
