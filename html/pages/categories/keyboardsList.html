@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,32 +8,74 @@
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="/css/mystyles.css">
 
-        <!-- Mont Google Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
-            rel="stylesheet">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <h2><u>Here is a list of all available keyboards</u></h2>
 
-    <!-- 1st Item -->
-    <img src="../../../assets/images/keyboards/cynosa_v2.png" alt="cynosa_v2" width="200px">
-    <h4>Razer Cynosa V2</h4>
-    <p>For more product details <a href="../products/keyboard/cynosa_201.html" target="_blank">click here</a></p>
+    <!--Nav Bar Container-->
+    <section id="title">
 
-    <br>
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar">
+                <a class="navbar-brand" href="../index.html">
+                        <!-- <img src="/assets/images/Logo/Pinterest-logo.png" alt="Cyber Station Logo"
+                            class="navbar-logo" />  -->
+                            CyberStation                </a>
+                <div class="navbar-links">
+                    <div class="nav-item">
+                        <a href="../../pages/sellerInfo/about.html">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../pages/auth/login.html">Log In</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../pages/auth/register.html">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
 
-    <!-- 2nd Item -->
-    <img src="../../../assets/images/keyboards/pro_x60.png" alt="pro_x60" width="200px">
-    <h4>Logitech X60 pro</h4> 
-    <p>For more product details <a href="../products/keyboard/x60_202.html" target="_blank">click here</a></p>
+    <div class="product-section">
+        <h2>Keyboards</h2>
+    
+        <div class="product-list">
+            <!-- 1st Product -->
+            <div class="product-item">
+                <div class="product-content">
+                <img src="../../../assets/images/keyboards/cynosa_v2.png" alt="cynosa_v2" width="200px">
+                <h4>Razer Cynosa V2</h4>
+            </div>
+                <p class="product-description">For more product details <a href="../products/keyboard/cynosa_201.html" target="_blank">click here</a></p>
+            </div>
+    
+            <!-- 2nd Product -->
+            <div class="product-item">
+                <div class="product-content">
+                <img src="../../../assets/images/keyboards/pro_x60.png" alt="pro_x60" width="200px">
+                <h4>Logitech X60 pro</h4>
+            </div>
+                <p class="product-description">For more product details <a href="../products/keyboard/x60_202.html" target="_blank">click here</a></p>
+            </div>
+            
+            <!-- Add more products as needed -->
+        </div>
+    </div>
 
-    <br>
-    <div>
+    <div class="bottom-container">
         <a href="../index.html">
-            <button>Back to home page</button>
+            <button type="button" class="btn home-button"> Back To Home</button>
         </a>
     </div>
+
+    <footer id="footer">
+        <p class="footer-text">© Copyright 2024 CyberStation</p>
+    </footer>
 </body>
 </html>
