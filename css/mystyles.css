@@ -5,26 +5,26 @@
 
 /* Headings */
 body {
-    font-family: "Montserrat", serif;
+    font-family: "Poppins", serif;
     margin: 0;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 3.5rem;
     line-height: 1.5;
 }
 
 h2 {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     font-weight: bold;
     font-size: 2rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -59,13 +59,15 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 10vh;
+    min-height: 5vh;
     /* padding: 10px 20px; */
     /* Adjust the navbar padding */
 }
 
 .navbar-brand {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 2rem;
     color: #F3F3E0;
     text-decoration: none;
@@ -88,8 +90,9 @@ p {
 }
 
 .nav-item a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1rem;
     color: #F3F3E0;
     text-decoration: none;
@@ -110,6 +113,75 @@ p {
 
 
 
+ /* INFO Section */
+
+ .info_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+
+.left_info_bar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    background-color: #F3F3E0;
+}
+
+.left_info_bar p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    margin: 5% auto;
+    line-height: 1.6;
+    color: #0B192C;
+}
+
+.left_info_bar h2 {
+    color: #1E3E62;
+    font-size: 3rem;
+}
+
+.info_msg {
+    color: #FF6500;
+    ;
+}
+
+.right_info_bar {
+    width: auto;
+    margin-right: 5%;
+    align-self:flex-start;
+}
+
+.right_info_bar img {
+    height: 80vh;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 5px 5px 20px #1e3e625b;
+}
+
+.consult_us_button a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    size-adjust: auto;
+    border: none;
+    background-color: #1E3E62;
+    color: #F3F3E0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.consult_us_button a:hover {
+    background-color: #FF6500;
+}
+
+
 
 
 /* Title */
@@ -127,7 +199,7 @@ p {
 #categories {
     color: #1E3E62;
     text-align: center;
-    min-height: 82vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,53 +209,66 @@ p {
     text-align: center;
 }
 
-    .heading {
+.heading {
     padding-top: 40px;
+
 }
 
 .heading h3 {
-    font-weight: 900;
-    font-size: 3.5rem;
+    color: #1E3E62;
+    font-size: 3rem;
     padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* Layout for the categories items */
 .row {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 2rem; /* Space between items */
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 
 
 
 .categories-item a {
-    display: block;
+    display: inline-grid;
     text-decoration: none;
-    color: #FF6500;
+    color: #F3F3E0;
     text-align: center;
     transition: transform 0.2s ease, color 0.2s ease;
+    background-color: #0a192c;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 15px;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Hover effect for categories-link */
 .categories-item a:hover {
-    color: #1E3E62;
+    color: #FF6500;
     transform: scale(1.1);
+    box-shadow: 5px 5px 10px #ff660052; /* Add box shadow on hover */
 }
 
 .categories-icon {
-    color: #FF6500;
+    color: #F3F3E0;
     margin-bottom: 1rem;
-    font-size: 4rem; /* Increase icon size */
+    font-size: 4rem;
+    /* Increase icon size */
 }
 
 /* Change icon color on hover */
 .categories-item a:hover .categories-icon {
-    color: #1E3E62;
+    color: #FF6500;
 }
 
 .categories-item h3 {
-    font-size: 2rem; /* Increase heading size */
+    font-size: 2rem;
+    /* Increase heading size */
     font-weight: 700;
     margin-top: 1rem;
 }
@@ -221,14 +306,14 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10px;
+    margin-left: 5%;
     background-color: #F3F3E0;
 }
 
 .left_about_bar p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    margin: 10px auto;
+    margin: 5% auto;
     line-height: 1.6;
     color: #0B192C;
 }
@@ -239,7 +324,8 @@ p {
 }
 
 .thanks_msg {
-    color: #FF6500;;
+    color: #FF6500;
+    ;
 }
 
 .right_about_bar {
@@ -270,7 +356,7 @@ p {
 
 /* Buttons */
 .bottom-container {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     text-align: center;
     padding: 20px 20px 30px;
@@ -279,7 +365,7 @@ p {
 
 
 .home-button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 1%;
     font-size: 1rem;
     padding: 10px 20px;
@@ -296,20 +382,20 @@ p {
 }
 
 .link-button {
-    text-decoration: none; 
-    color: #1E3E62; 
-    padding: 8px 16px; 
-    font-size: 1rem; 
-    border: 2px solid transparent; 
-    border-radius: 25px; 
-    background-color: transparent; 
-    transition: all 0.2s ease; 
+    text-decoration: none;
+    color: #1E3E62;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: all 0.2s ease;
 }
 
 .link-button:hover {
-    color: #FF6500; 
-    border-color: #FF6500; 
-    background-color: transparent; 
+    color: #FF6500;
+    border-color: #FF6500;
+    background-color: transparent;
 }
 
 
@@ -346,13 +432,14 @@ p {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-    width: 220px; /* Set a fixed width for uniformity */
+    width: 300px;
+    /* Set a fixed width for uniformity */
     position: relative;
 }
 
 /* Hover effect for the entire product item */
 .product-item:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 
@@ -374,7 +461,7 @@ p {
 /* Product description styling, positioned below each item */
 .product-description {
     font-size: 0.9rem;
-    color: #1E3E62 ;
+    color: #1E3E62;
     margin-top: 10px;
 }
 
