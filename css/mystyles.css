@@ -475,31 +475,126 @@ p {
     text-decoration: underline;
 }
 
+
+
+/* Styling for auth containers */
+
 .auth_main_container {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.auth_main_container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0a192c;
+    margin-bottom: 20px;
 }
 
 .auth_area {
-    border: 1px solid #D3D3D3;
-    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input_area {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_area label {
+    font-weight: 600;
+    color: #555;
 }
 
 .input_field {
-    padding: 5px;
-    border: 1px solid #D3D3D3;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 3px;
+    font-size: 16px;
+    color: #333;
 }
 
-.password_input_area {
+.input_field:focus {
+    border-color: #FF6500;
+    outline: none;
+}
+
+.account_prompt {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.account_prompt p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.account_prompt .signup-link {
+    color: #FF6500; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.account_prompt .signup-link:hover {
+    color: #1E3E62; 
+    text-decoration: none; 
+}
+
+.shop_prompt {
     margin-top: 10px;
+    text-align: center;
+}
+
+.shop_prompt p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.shop_prompt .shop-link {
+    color: #FF6500; /* Orange color for the link */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.shop_prompt .shop-link:hover {
+    color: #1E3E62; /* Darker color when hovered */
+    text-decoration: none;
 }
 
 .btn_area {
     margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #0a192c;
+    color: white;
+    border: 1px solid #0a192c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1E3E62;
+    border-color: #1E3E62;
+}
+
+.bg-color {
+    background-color: #F3F3E0;
 }

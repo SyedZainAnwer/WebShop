@@ -4,37 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Webshop Register</title>
+    <title>ZAA Login</title>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="/css/mystyles.css">
 
-    <!-- Google Fonts-->
+    <!-- Mont Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="auth_main_container">
         <h3>Sign Up</h3>
         <div class="auth_area">
-            <form action="#">
-                <div class="username_input_are">
-                    <label>Username:</label> <br>
-                    <input type="text" placeholder="Username" name="username" class="input_field" />
+            <form>
+                <div class="input_area">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" name="username" class="input_field" required />
                 </div>
-                <div class="password_input_area">
-                    <label>Password:</label> <br>
-                    <input type="text" placeholder="Username" name="username" class="input_field" />
+                <div class="input_area">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Create your password" name="password" class="input_field" required />
                 </div>
-    
+                <div class="input_area">
+                    <label for="Confirm password">Password:</label>
+                    <input type="password" id="password" placeholder="Confirm your password" name="password" class="input_field" required />
+                </div>
+
                 <div class="btn_area">
-                    <button>Login</button>
+                    <button type="submit" class="btn">Register</button>
                 </div>
             </form>
+
+            <div class="account_prompt">
+                <p>Already have an account? <a href="./login.html" class="signup-link">Sign In</a></p>
+            </div>
+
+            <div class="shop_prompt">
+                <p>Not ready to sign up? Feel free to <a href="../index.html" class="shop-link">explore our shop</a> instead!</p>
+            </div>
         </div>
     </div>
 </body>
