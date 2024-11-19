@@ -6,10 +6,8 @@
 }
 
 /* Headings */
-<<<<<<< HEAD
 
-h1 {
-=======
+
 body {
     font-family: "Poppins", serif;
     margin: 0;
@@ -17,27 +15,20 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-weight: 900;
     font-size: 3.5rem;
     line-height: 1.5;
 }
 
 h2 {
-<<<<<<< HEAD
-=======
     font-family: 'Poppins';
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-weight: bold;
     font-size: 2rem;
     line-height: 1.5;
 }
 
 h3 {
-<<<<<<< HEAD
-=======
     font-family: 'Poppins', sans-serif;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -73,12 +64,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    min-height: 10vh;
 }
 
 .navbar-brand {
-=======
     min-height: 5vh;
     /* padding: 10px 20px; */
     /* Adjust the navbar padding */
@@ -88,7 +76,6 @@ p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-size: 2rem;
     color: #F3F3E0;
     text-decoration: none;
@@ -110,13 +97,10 @@ p {
 }
 
 .nav-item a {
-<<<<<<< HEAD
     font-weight: 400;
-=======
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-size: 1rem;
     color: #F3F3E0;
     text-decoration: none;
@@ -334,14 +318,12 @@ p {
 }
 
 .left_about_bar {
-<<<<<<< HEAD
     width: 48%;
     background-color: #F3F3E0;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-=======
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -356,7 +338,6 @@ p {
     margin: 5% auto;
     line-height: 1.6;
     color: #0B192C;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
 }
 
 .left_about_bar h2 {
@@ -380,10 +361,7 @@ p {
 
 .thanks_msg {
     color: #FF6500;
-<<<<<<< HEAD
     font-style: italic;
-=======
-    ;
 }
 
 .right_about_bar {
@@ -392,7 +370,6 @@ p {
 
 .right_about_bar img {
     height: 99vh;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
 }
 
 .contact_us_button {
@@ -433,11 +410,7 @@ p {
 
 /* Buttons */
 .bottom-container {
-<<<<<<< HEAD
-    
-=======
     font-family: 'Poppins', sans-serif;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-size: 1.1rem;
     text-align: center;
     padding: 20px 20px 30px;
@@ -446,11 +419,7 @@ p {
 
 
 .home-button {
-<<<<<<< HEAD
-    
-=======
     font-family: 'Poppins', sans-serif;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     margin: 1%;
     font-size: 1rem;
     padding: 10px 20px;
@@ -571,17 +540,14 @@ p {
     flex-direction: column;
     text-align: center;
     min-height: 100vh;
-<<<<<<< HEAD
 }
 
 .auth_main_container h3 {
-=======
     font-family: 'Montserrat', sans-serif;
 }
 
 .auth_main_container h3 {
     font-family: 'Montserrat', sans-serif;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     font-weight: 700;
     color: #0a192c;
     margin-bottom: 20px;
@@ -599,11 +565,8 @@ p {
 .input_area {
     margin-bottom: 20px;
     text-align: left;
-<<<<<<< HEAD
-=======
     display: flex;
     flex-direction: column;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
 }
 
 .input_area label {
@@ -612,10 +575,7 @@ p {
 }
 
 .input_field {
-<<<<<<< HEAD
     width: 100%;
-=======
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
     padding: 10px;
     margin-top: 6px;
     border: 1px solid #ccc;
@@ -647,11 +607,8 @@ p {
 
 .account_prompt .signup-link:hover {
     color: #1E3E62; 
-<<<<<<< HEAD
     text-decoration: underline; 
-=======
     text-decoration: none; 
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
 }
 
 .shop_prompt {
@@ -672,11 +629,8 @@ p {
 
 .shop_prompt .shop-link:hover {
     color: #1E3E62; /* Darker color when hovered */
-<<<<<<< HEAD
     text-decoration: underline; /* Underline on hover */
-=======
     text-decoration: none;
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
 }
 
 .btn_area {
@@ -704,8 +658,6 @@ p {
 .bg-color {
     background-color: #F3F3E0;
 }
-<<<<<<< HEAD
-
 /* Specific styles for Razer Cynosa V2 page */
 
 /* Main container for the product page */
@@ -779,5 +731,3 @@ p {
 .back-button:hover {
     background-color: #FF6500;
 }
-=======
->>>>>>> 5fb2e0cc112e22b27e1b40a21453e7bc00f7292e
