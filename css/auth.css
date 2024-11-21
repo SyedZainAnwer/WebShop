@@ -1,0 +1,95 @@
+/* Styling for auth containers */
+
+.auth_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.auth_main_container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0a192c;
+    margin-bottom: 20px;
+}
+
+.auth_area {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input_area {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_area label {
+    font-weight: 600;
+    color: #555;
+}
+
+.input_field {
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input_field:focus {
+    border-color: #FF6500;
+    outline: none;
+}
+
+.account_prompt {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.account_prompt p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.account_prompt .signup-link {
+    color: #FF6500; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.account_prompt .signup-link:hover {
+    color: #1E3E62; 
+    text-decoration: none; 
+}
+
+.shop_prompt {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.shop_prompt p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.shop_prompt .shop-link {
+    color: #FF6500; /* Orange color for the link */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.shop_prompt .shop-link:hover {
+    color: #1E3E62; /* Darker color when hovered */
+    text-decoration: none;
+}
