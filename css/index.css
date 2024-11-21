@@ -14,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 5%;
-    background-color: #F3F3E0;
 }
 
 .left_info_bar p {
@@ -22,16 +21,16 @@
     font-size: 1.25rem;
     margin: 5% auto;
     line-height: 1.6;
-    color: #0B192C;
+    color: var(--text-color);
 }
 
 .left_info_bar h2 {
-    color: #1E3E62;
+    color: var(--text-color);
     font-size: 3rem;
 }
 
 .info_msg {
-    color: #FF6500;
+    color: var(--primary-color);
     ;
 }
 
@@ -45,7 +44,7 @@
     height: 80vh;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 40px;
-    box-shadow: 5px 5px 20px #1e3e625b;
+    box-shadow: 10px 15px 20px var(--text-color);
 }
 
 .consult_us_button a {
@@ -55,15 +54,15 @@
     padding: 10px 20px;
     size-adjust: auto;
     border: none;
-    background-color: #1E3E62;
-    color: #F3F3E0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
 }
 
 .consult_us_button a:hover {
-    background-color: #FF6500;
+    background-color: var(--primary-color);
 }
 
 
@@ -72,8 +71,8 @@
 
 /* Categories Section */
 #categories {
-    background-color: #F3F3E0;
-    color: #1E3E62;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
     min-height: 70vh;
     display: flex;
@@ -84,7 +83,7 @@
 
 
 .heading h3 {
-    color: #1E3E62;
+    color: var(--text-color);
     font-size: 3rem;
     padding-top: 40px;
     padding-bottom: 100px;
@@ -106,10 +105,10 @@
 .categories-item a {
     display: inline-grid;
     text-decoration: none;
-    color: #F3F3E0;
+    color: var(--bg-color);
     text-align: center;
     transition: transform 0.2s ease, color 0.2s ease;
-    background-color: #0a192c;
+    background-color: var(--accent-color);
     width: 30rem;
     height: 20rem;
     border-radius: 15px;
@@ -119,13 +118,13 @@
 
 /* Hover effect for categories-link */
 .categories-item a:hover {
-    color: #FF6500;
+    color: var(--primary-color);
     transform: scale(1.1);
     box-shadow: 5px 5px 10px #ff660052; /* Add box shadow on hover */
 }
 
 .categories-icon {
-    color: #F3F3E0;
+    color: var(--bg-color);
     margin-bottom: 1rem;
     font-size: 4rem;
     /* Increase icon size */
@@ -133,7 +132,7 @@
 
 /* Change icon color on hover */
 .categories-item a:hover .categories-icon {
-    color: #FF6500;
+    color: var(--primary-color);
 }
 
 .categories-item h3 {

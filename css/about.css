@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 5%;
-    background-color: #F3F3E0;
+    background-color: var(--bg-color);
 }
 
 .left_about_bar p {
@@ -18,16 +18,16 @@
     font-size: 1rem;
     margin: 5% auto;
     line-height: 1.6;
-    color: #0B192C;
+    color: var(--accent-color);
 }
 
 .left_about_bar h2 {
-    color: #1E3E62;
+    color: var(--text-color);
     font-size: 3rem;
 }
 
 .thanks_msg {
-    color: #FF6500;
+    color: var(--primary-color);
     ;
 }
 
@@ -45,12 +45,12 @@
 
 
 .contact_us_button a {
-    color: #1E3E62;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .contact_us_button a:hover {
-    color: #FF6500;
+    color: var(--primary-color);
     transition: color 0.2s ease;
 }
 

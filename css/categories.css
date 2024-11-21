@@ -3,14 +3,14 @@
     padding: 30px;
     padding-bottom: 10.55%;
     text-align: center;
-    background-color: #F3F3E0;
+    background-color: var(--bg-color);
 }
 
 /* Style for the section heading */
 .product-section h2 {
     margin-bottom: 3%;
     font-size: 2rem;
-    color: #0B192C;
+    color: var(--accent-color);
 }
 
 /* Flex layout for product items */
@@ -22,7 +22,7 @@
 
 /* Individual product item styling */
 .product-item {
-    background-color: white;
+    background-color: var(--contrast-text-color);
     padding: 15px;
     border-radius: 9px;
     text-align: center;
@@ -51,19 +51,19 @@
 .product-item h4 {
     margin: 10px 0;
     font-size: 1.2rem;
-    color: #0B192C;
+    color: var(--accent-color);
 }
 
 /* Product description styling, positioned below each item */
 .product-description {
     font-size: 0.9rem;
-    color: #1E3E62;
+    color: var(--text-color);
     margin-top: 10px;
 }
 
 /* Product link styling */
 .product-description a {
-    color: #FF6500;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
