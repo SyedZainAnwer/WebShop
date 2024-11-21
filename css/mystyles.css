@@ -7,12 +7,39 @@
     --contrast-text-color: #fff;
 }
 
-.dark-mode {
+.darkmode {
     --bg-color: #050d18;
     --accent-color: #F3F3E0;
     --text-color: #fff;
     --primary-color: #FF6500;
     --contrast-text-color: #000;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 80px;
+    padding: 0;
+    border-radius: 50px / 50px; 
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill: var(--contrast-text-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
 }
 
 * {
@@ -109,6 +136,7 @@ h3 {
 .navbar-links {
     display: flex;
     margin-left: auto;
+    align-items: center;
     /* Push the links to the right */
 }
 

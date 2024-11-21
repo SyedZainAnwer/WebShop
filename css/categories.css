@@ -22,7 +22,7 @@
 
 /* Individual product item styling */
 .product-item {
-    background-color: var(--contrast-text-color);
+    background-color: #fff;
     padding: 15px;
     border-radius: 9px;
     text-align: center;
@@ -51,13 +51,13 @@
 .product-item h4 {
     margin: 10px 0;
     font-size: 1.2rem;
-    color: var(--accent-color);
+    color: #0a192c;
 }
 
 /* Product description styling, positioned below each item */
 .product-description {
     font-size: 0.9rem;
-    color: var(--text-color);
+    color: #0a192c;
     margin-top: 10px;
 }
 
