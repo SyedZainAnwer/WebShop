@@ -1,6 +1,7 @@
 /* Container for the entire product section */
 .product-section {
     padding: 30px;
+    padding-bottom: 10.55%;
     text-align: center;
     background-color: #F3F3E0;
 }
