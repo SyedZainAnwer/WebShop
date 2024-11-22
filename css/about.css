@@ -1,0 +1,57 @@
+/* About us page */
+.about_us_main_container {
+    display: flex;
+}
+
+
+.left_about_bar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    background-color: var(--bg-color);
+}
+
+.left_about_bar p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 5% auto;
+    line-height: 1.6;
+    color: var(--accent-color);
+}
+
+.left_about_bar h2 {
+    color: var(--text-color);
+    font-size: 3rem;
+}
+
+.thanks_msg {
+    color: var(--primary-color);
+    ;
+}
+
+.right_about_bar {
+    width: 50%;
+}
+
+.right_about_bar img {
+    height: 99vh;
+}
+
+.contact_us_button {
+    margin-top: 30px;
+}
+
+
+.contact_us_button a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact_us_button a:hover {
+    color: var(--primary-color);
+    transition: color 0.2s ease;
+}
+
+
