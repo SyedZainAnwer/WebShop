@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphics Card Category</title>
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="/css/mystyles.css">
+    <link rel="stylesheet" href="../../../css/mystyles.css">
     <link rel="stylesheet" href="../../../css/categories.css">
 
     <!-- Google Fonts-->
@@ -39,6 +39,16 @@
                     <div class="nav-item">
                         <a href="../../pages/auth/register.html">Register</a>
                     </div>
+
+                    <div class="nav-item currency-dropdown">
+                        <select id="currency">
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                            <option value="PKR">PKR (Rs)</option>
+                        </select>
+                    </div>
+                    
                     <div class="nav-item">
                         <button id="theme-switch">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -131,9 +141,10 @@
         <p class="footer-text">© Copyright 2024 CyberStation</p>
     </footer>
     
-    <script type="text/javascript" src="/js/darkmode.js"></script>
-    <script type="text/javascript" src="/js/collectionList.js"></script>
-    <script type="text/javascript" src="/js/priceCalculation.js"></script>
+    <script type="module" src="../../../js/currencies.js"></script>
+    <script type="text/javascript" src="../../../js/darkmode.js"></script>
+    <script type="text/javascript" src="../../../js/collectionList.js"></script>
+    <script type="text/javascript" src="../../../js/priceCalculation.js"></script>
 </body>
 
 </html>
