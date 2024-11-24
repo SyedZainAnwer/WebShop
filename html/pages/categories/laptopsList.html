@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop Category</title>
+    <title>Graphics Card Category</title>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="../../../css/mystyles.css">
     <link rel="stylesheet" href="../../../css/categories.css">
@@ -21,24 +21,33 @@
 
     <!--Nav Bar Container-->
     <section id="title">
-
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../index.html">
-                        <!-- <img src="/assets/images/Logo/Pinterest-logo.png" alt="Cyber Station Logo"
-                            class="navbar-logo" />  -->
-                            CyberStation                </a>
+                <a class="navbar-brand" href="../index.html">CyberStation</a>
+                <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
+                    ☰
+                </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../../pages/sellerInfo/about.html">About Us</a>
+                        <a href="../sellerInfo/about.html">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../pages/auth/login.html">Log In</a>
+                        <a href="../auth/login.html">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../pages/auth/register.html">Register</a>
+                        <a href="../auth/register.html">Register</a>
                     </div>
+
+                    <div class="nav-item currency-dropdown">
+                        <select id="currency">
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                            <option value="PKR">PKR (Rs)</option>
+                        </select>
+                    </div>
+
                     <div class="nav-item">
                         <button id="theme-switch">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -56,33 +65,71 @@
                 </div>
             </nav>
         </div>
-    </section>
+    </section>    
+
 
     <div class="product-section">
         <h2>Laptops</h2>
 
         <div class="product-list">
             <!-- 1st Product -->
+
             <div class="product-item">
-                <div class="product-content">
-                    <img src="../../../assets/images/laptops/acer_nitro5.jpg" alt="acer_nitro5" width="200px">
-                    <h4>Acer Nitro 5</h4>
+                <a href="../products/laptop/acer_301.html">
+                    <div class="product-content">
+                        <img src="../../../assets/images/laptops/acer_nitro5.jpg" alt="acer_nitro5" width="200px">
+                        <h4>Acer Nitro 5</h4>
+                        <p class="product-price">$1500</p>
+                        <p class="taxed-price"><span>With Tax: </span></p>
+                    </div>
+                </a>
+                    <div class="add-btn-area">
+                        <select class="quantity-dropdown" aria-label="Select quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button type="button" class="btn add-btn collection">Add To Collections</button>
+                        <button type="button" class="btn add-btn">Add To Cart</button>
+                    </div>
                 </div>
-                <p class="product-description">For more product details <a href="../products/laptop/acer_301.html"
-                        target="_blank">click here</a></p>
-            </div>
 
             <!-- 2nd Product -->
             <div class="product-item">
-                <div class="product-content">
-                    <img src="../../../assets/images/laptops/m3_pro_16i.jpeg" alt="m3_pro_16i" width="200px">
-                    <h4>M3 Macbook Pro</h4>
+                <a href="../products/laptop/m3pro_302.html">
+                    <div class="product-content">
+                        <img src="../../../assets/images/laptops/m3_pro_16i.jpeg" alt="m3_pro_16i" width="200px">
+                        <h4>M3 Macbook Pro</h4>
+                        <p class="product-price">$2000</p>
+                        <p class="taxed-price"><span>With Tax: </span></p>
+                    </div>
+                    <div class="add-btn-area">
+                </a>
+                        <select class="quantity-dropdown" aria-label="Select quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button type="button" class="btn add-btn collection">Add To Collections</button>
+                        <button type="button" class="btn add-btn">Add To Cart</button>
+                    </div>
                 </div>
-                <p class="product-description">For more product details <a href="../products/laptop/m3pro_302.html"
-                        target="_blank">click here</a></p>
-            </div>
 
             <!-- Add more products as needed -->
+        </div>
+    </div>
+
+    <div id="collection-section">
+        <h3>Your Collection</h3>
+        <div class="collection-list">
+            <!-- Collection items will dynamically appear here -->
+            <div class="collection-empty">
+                <p>Your collection is currently empty.</p>
+            </div>
         </div>
     </div>
 
@@ -97,7 +144,11 @@
         <p class="footer-text">© Copyright 2024 CyberStation</p>
     </footer>
 
+    <script type="module" src="../../../js/currencies.js"></script>
     <script type="text/javascript" src="../../../js/darkmode.js"></script>
+    <script type="text/javascript" src="../../../js/collectionList.js"></script>
+    <script type="text/javascript" src="../../../js/priceCalculation.js"></script>
+    <script type="text/javascript" src="../../../js/toggleNavbar.js"></script>
 </body>
 
 </html>

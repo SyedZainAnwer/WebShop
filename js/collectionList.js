@@ -7,6 +7,9 @@ document.querySelectorAll(".collection").forEach((btn) => {
         const productName = productItem.querySelector("h4").textContent;
         const productImage = productItem.querySelector("img").src;
         const quantity = parseInt(productItem.querySelector(".quantity-dropdown").value);
+        const collectionSection = document.getElementById("collection-section");
+        const collectionList = document.querySelector(".collection-list");
+
 
         const emptyMessage = document.querySelector(".collection-empty");
         if (emptyMessage) emptyMessage.remove();
@@ -37,14 +40,37 @@ document.querySelectorAll(".collection").forEach((btn) => {
                 collectionItem.remove();
 
                 if (collectionList.children.length === 0) {
+                    collectionSection.style.display = "none";
                     const emptyMessage = document.createElement("div");
                     emptyMessage.className = "collection-empty";
                     emptyMessage.innerHTML = `<p>Your collection is currently empty.</p>`;
                     collectionList.appendChild(emptyMessage);
+                } else {
+                    collectionSection.style.display = "block";
                 }
             });
 
             collectionList.appendChild(collectionItem);
         }
+
+        toggleCollectionSection()
     });
 });
+
+
+
+function toggleCollectionSection() {
+    if (collectionList.children.length === 0 || collectionList.querySelectorAll('.collection-item').length === 0) {
+        collectionSection.style.display = "none";
+
+        // Add the empty message back
+        const emptyMessage = document.createElement("div");
+        emptyMessage.className = "collection-empty";
+        emptyMessage.innerHTML = `<p>Your collection is currently empty.</p>`;
+        collectionList.appendChild(emptyMessage);
+    } else {
+        collectionSection.style.display = "block";
+    }
+}
+
+toggleCollectionSection()

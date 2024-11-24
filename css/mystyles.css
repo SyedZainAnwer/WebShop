@@ -73,6 +73,11 @@ h3 {
     font-size: 1.4rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* Footer */
 #footer {
@@ -107,62 +112,95 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 5vh;
-    /* padding: 10px 20px; */
-    /* Adjust the navbar padding */
+    padding: 10px 20px;
+    position: relative;
 }
 
 .navbar-brand {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2rem;
-    color: var(--bg-color);
-    text-decoration: none;
-    margin-left: 3%;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.navbar-brand:hover {
-    color: var(--primary-color);
-    transform: scale(1.05);
-}
-
-.navbar-logo {
-    height: 80px;
-    width: auto;
+    font-size: 1.8rem; /* Slightly smaller for smaller screens */
 }
 
 .navbar-links {
     display: flex;
     margin-left: auto;
     align-items: center;
-    /* Push the links to the right */
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-links.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .nav-item {
-    padding: 0 18px;
+    padding: 0 10px;
 }
 
-.nav-item a {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1rem;
+.navbar-toggler {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
     color: var(--bg-color);
-    text-decoration: none;
+}
+
+.navbar-brand,
+.nav-item a {
+    color: var(--contrast-text-color);
     transition: color 0.3s ease;
-    /* Smooth color transition on hover */
 }
 
-.nav-item a:hover {
-    color: var(--primary-color);
+.navbar-toggler {
+    color: var(--contrast-text-color);
 }
 
-/* Optional: Style for the active link */
-.nav-item a.active {
-    color: var(--primary-color);
+.navbar {
+    background-color: var(--accent-color);
 }
+
+.navbar-links {
+    background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--accent-color);
+        transform: translateX(-100%);
+        opacity: 0;
+        z-index: 1;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-links.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 /* Title */
 #title {

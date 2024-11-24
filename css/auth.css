@@ -8,6 +8,7 @@
     text-align: center;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
 }
 
 .auth_main_container h3 {

@@ -21,23 +21,22 @@
 
     <!--Nav Bar Container-->
     <section id="title">
-
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../index.html">
-                        <!-- <img src="/assets/images/Logo/Pinterest-logo.png" alt="Cyber Station Logo"
-                            class="navbar-logo" />  -->
-                            CyberStation                </a>
+                <a class="navbar-brand" href="../index.html">CyberStation</a>
+                <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
+                    ☰
+                </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../../pages/sellerInfo/about.html">About Us</a>
+                        <a href="../sellerInfo/about.html">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../pages/auth/login.html">Log In</a>
+                        <a href="../auth/login.html">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../pages/auth/register.html">Register</a>
+                        <a href="../auth/register.html">Register</a>
                     </div>
 
                     <div class="nav-item currency-dropdown">
@@ -48,7 +47,7 @@
                             <option value="PKR">PKR (Rs)</option>
                         </select>
                     </div>
-                    
+
                     <div class="nav-item">
                         <button id="theme-switch">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -66,7 +65,7 @@
                 </div>
             </nav>
         </div>
-    </section>
+    </section>    
 
 
     <div class="product-section">
@@ -75,12 +74,14 @@
         <div class="product-list">
             <!-- 1st Product -->
             <div class="product-item">
+            <a href="../products/gpu/3050_101.html">
                 <div class="product-content">
                     <img src="../../../assets/images/graphicsCard/rtx_3050.jpg" alt="rtx_3050" width="200px">
                     <h4>GeForce RTX 3050</h4>
-                    <p class="product-price">$1,199.99</p>
+                    <p class="product-price">$300</p>
                     <p class="taxed-price"><span>With Tax: </span></p>
                 </div>
+            </a>
                 <div class="add-btn-area">
                     <select class="quantity-dropdown" aria-label="Select quantity">
                         <option value="1">1</option>
@@ -97,24 +98,26 @@
     
             <!-- 2nd Product -->
             <div class="product-item">
-                <div class="product-content">
-                    <img src="../../../assets/images/graphicsCard/rtx_4080.jpg" alt="GeForce RTX 4080 SUPER" width="200px">
-                    <h4>GeForce RTX 4080 SUPER</h4>
-                    <p class="product-price">$1,199.99</p>
-                    <p class="taxed-price"><span>With Tax: </span></p>
+                <a href="../products/gpu/4080_102.html">
+                    <div class="product-content">
+                        <img src="../../../assets/images/graphicsCard/rtx_4080.jpg" alt="rtx_4080" width="200px">
+                        <h4>GeForce RTX 4080 Super</h4>
+                        <p class="product-price">$700</p>
+                        <p class="taxed-price"><span>With Tax: </span></p>
+                    </div>
+                </a>
+                    <div class="add-btn-area">
+                        <select class="quantity-dropdown" aria-label="Select quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button type="button" class="btn add-btn collection">Add To Collections</button>
+                        <button type="button" class="btn add-btn">Add To Cart</button>
+                    </div>
                 </div>
-                <div class="add-btn-area">
-                    <select class="quantity-dropdown" aria-label="Select quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <button type="button" class="btn add-btn collection">Add To Collections</button>
-                    <button type="button" class="btn add-btn">Add To Cart</button>
-                </div>
-            </div>
             
             <!-- Add more products as needed -->
         </div>
@@ -145,6 +148,7 @@
     <script type="text/javascript" src="../../../js/darkmode.js"></script>
     <script type="text/javascript" src="../../../js/collectionList.js"></script>
     <script type="text/javascript" src="../../../js/priceCalculation.js"></script>
+    <script type="text/javascript" src="../../../js/toggleNavbar.js"></script>
 </body>
 
 </html>

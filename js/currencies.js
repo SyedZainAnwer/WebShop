@@ -1,4 +1,4 @@
-import {getTotalPrice} from "./priceCalculation.js";
+import { getTotalPrice } from "./priceCalculation.js";
 
 const currencyRates = {
     USD: 1,
@@ -7,7 +7,7 @@ const currencyRates = {
     PKR: 277.62
 };
 
-function updatedPrice(selectedCurrency) {
+const updatedPrice = (selectedCurrency) => {
     const conversionRate = currencyRates[selectedCurrency];
 
     document.querySelectorAll(".product-item").forEach((product) => {
@@ -20,7 +20,7 @@ function updatedPrice(selectedCurrency) {
         const convertedTaxedPrice = (getTotalPrice(basePrice) * conversionRate).toFixed(2);
 
         actualPrice.textContent = `${selectedCurrency} ${convertedPrice}`;
-        taxedPrice.textContent = `<span> With Tax: </span> ${selectedCurrency} ${convertedTaxedPrice}`;
+        taxedPrice.textContent = `${selectedCurrency} ${convertedTaxedPrice}`;
     });
 }
 
