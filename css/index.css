@@ -1,12 +1,12 @@
- /* INFO Section */
-
- .info_main_container {
+/* Info Section */
+.info_main_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
-
 
 .left_info_bar {
     width: 50%;
@@ -27,47 +27,23 @@
 .left_info_bar h2 {
     color: var(--text-color);
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .info_msg {
     color: var(--primary-color);
-    ;
 }
 
 .right_info_bar {
     width: auto;
-    margin-right: 5%;
-    align-self:flex-start;
 }
 
 .right_info_bar img {
-    height: 80vh;
+    max-height: 80vh;
+    width: auto;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 40px;
-    /* box-shadow: 10px 1px 10px var(--text-color); */
-
 }
-
-.consult_us_button a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    padding: 10px 20px;
-    size-adjust: auto;
-    border: none;
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-}
-
-.consult_us_button a:hover {
-    background-color: var(--primary-color);
-}
-
-
-
 
 
 /* Categories Section */
@@ -82,7 +58,6 @@
     padding-bottom: 5%;
 }
 
-
 .heading h3 {
     color: var(--text-color);
     font-size: 3rem;
@@ -90,18 +65,19 @@
     padding-bottom: 100px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
 }
 
-/* Layout for the categories items */
 .row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-evenly;
 }
 
-
+/* Flexbox to align GPU and Laptop in a row in large screens */
+.gpus,
+.laptops, .keyboards {
+    flex: 1 1 30rem;
+    display: flex;
+    justify-content: center;
+}
 
 .categories-item a {
     display: inline-grid;
@@ -110,35 +86,128 @@
     text-align: center;
     transition: transform 0.2s ease, color 0.2s ease;
     background-color: var(--accent-color);
-    width: 30rem;
-    height: 20rem;
+    width: 50%;
+    /* height: 20rem; */
     border-radius: 15px;
     justify-content: center;
     align-content: center;
+    padding: 1rem;
 }
 
-/* Hover effect for categories-link */
 .categories-item a:hover {
     color: var(--primary-color);
     transform: scale(1.1);
-    box-shadow: 5px 5px 10px #ff660052; /* Add box shadow on hover */
+    box-shadow: 5px 5px 10px rgba(255, 102, 0, 0.2);
 }
 
 .categories-icon {
     color: var(--bg-color);
     margin-bottom: 1rem;
     font-size: 4rem;
-    /* Increase icon size */
 }
 
-/* Change icon color on hover */
+.categories-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
 .categories-item a:hover .categories-icon {
     color: var(--primary-color);
 }
 
-.categories-item h3 {
-    font-size: 2rem;
-    /* Increase heading size */
-    font-weight: 700;
-    margin-top: 1rem;
+
+/* Footer */
+#footer {
+    background-color: var(--accent-color);
+    padding: 2%;
+    text-align: center;
+    /* margin-top: 5%; */
+}
+
+.footer-text {
+    color: var(--contrast-text-color);
+}
+
+/* Button Styles */
+.consult_us_button a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.consult_us_button a:hover {
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .info_main_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        min-height: 0;
+        padding-top: 50px;
+    }
+
+    .left_info_bar,
+    .right_info_bar {
+        width: 90%;
+        text-align: center;
+    }
+
+    .left_info_bar h2 {
+        font-size: 1.5rem
+    }
+
+    .left_info_bar p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .categories-item a {
+        width: 50%;
+        height: auto;
+    }
+
+    .categories-item h3 {
+        font-size: 1rem;
+    }
+
+    .categories-icon {
+        font-size: 3rem;
+    }
+
+    .gpus, .laptops, .keyboards {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
+
+    .heading h3 {
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Responsive Button */
+@media screen and (min-width: 768px) {
+    .consult_us_button a {
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .right_info_bar img {
+        display: none;
+    }
 }
