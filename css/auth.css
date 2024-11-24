@@ -14,7 +14,7 @@
 .auth_main_container h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #555;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 

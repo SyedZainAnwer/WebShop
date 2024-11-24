@@ -118,6 +118,8 @@ a {
 
 .navbar-brand {
     font-size: 1.8rem; /* Slightly smaller for smaller screens */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .navbar-links {
@@ -148,8 +150,14 @@ a {
 
 .navbar-brand,
 .nav-item a {
+    font-weight: 700;
+    font-family: "montserrat", sans-serif;
     color: var(--contrast-text-color);
     transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: var(--primary-color);
 }
 
 .navbar-toggler {
