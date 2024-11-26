@@ -1,6 +1,8 @@
 /* About us page */
 .about_us_main_container {
     display: flex;
+    background-color: var(--bg-color);
+    height: 88vh;
 }
 
 
@@ -33,10 +35,15 @@
 
 .right_about_bar {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
 }
 
 .right_about_bar img {
-    height: 99vh;
+    /* max-height: 99vh; */
+    width: 100%;
 }
 
 .contact_us_button {
@@ -55,3 +62,20 @@
 }
 
 
+@media screen and (max-width: 1000px) {
+    .right_about_bar {
+        display: none;
+    }
+
+    .left_about_bar {
+        width: 100%;
+    }
+
+    .left_about_bar h2 {
+        text-align: center;
+    }
+
+    .contact_us_button {
+        text-align: center;
+    }
+}

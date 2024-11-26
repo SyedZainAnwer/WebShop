@@ -1,14 +1,20 @@
 const collectionSection = document.getElementById("collection-section");
 const collectionList = document.querySelector(".collection-list");
 
+
+
 document.querySelectorAll(".collection").forEach((btn) => {
     btn.addEventListener("click", (e) => {
         const productItem = e.target.closest(".product-item");
         const productName = productItem.querySelector("h4").textContent;
         const productImage = productItem.querySelector("img").src;
-        const quantity = parseInt(productItem.querySelector(".quantity-dropdown").value);
+        const productPrice = productItem.querySelector(".product-price").textContent.trim();
+        const numericProductPrice = parseFloat(productPrice.replace(/[^0-9.]/g, ""));
+        const quantity = parseInt(productItem.querySelector(".quantity-dropdown").value)
         const collectionSection = document.getElementById("collection-section");
         const collectionList = document.querySelector(".collection-list");
+
+        // const totalPrice = (getTotalPrice(numericProductPrice) * productQuantity).toFixed(2);
 
 
         const emptyMessage = document.querySelector(".collection-empty");
@@ -41,9 +47,9 @@ document.querySelectorAll(".collection").forEach((btn) => {
 
                 if (collectionList.children.length === 0) {
                     collectionSection.style.display = "none";
-                    const emptyMessage = document.createElement("div");
-                    emptyMessage.className = "collection-empty";
-                    emptyMessage.innerHTML = `<p>Your collection is currently empty.</p>`;
+                    // const emptyMessage = document.createElement("div");
+                    // emptyMessage.className = "collection-empty";
+                    // emptyMessage.innerHTML = `<p>Your collection is currently empty.</p>`;
                     collectionList.appendChild(emptyMessage);
                 } else {
                     collectionSection.style.display = "block";
@@ -66,8 +72,8 @@ function toggleCollectionSection() {
         // Add the empty message back
         const emptyMessage = document.createElement("div");
         emptyMessage.className = "collection-empty";
-        emptyMessage.innerHTML = `<p>Your collection is currently empty.</p>`;
-        collectionList.appendChild(emptyMessage);
+        // emptyMessage.innerHTML = `<p>Your collection is currently empty.</p>`;
+        // collectionList.appendChild(emptyMessage);
     } else {
         collectionSection.style.display = "block";
     }

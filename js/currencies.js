@@ -20,7 +20,7 @@ const updatedPrice = (selectedCurrency) => {
         const convertedTaxedPrice = (getTotalPrice(basePrice) * conversionRate).toFixed(2);
 
         actualPrice.textContent = `${selectedCurrency} ${convertedPrice}`;
-        taxedPrice.textContent = `${selectedCurrency} ${convertedTaxedPrice}`;
+        taxedPrice.textContent = `With Tax: ${selectedCurrency} ${convertedTaxedPrice}`;
     });
 }
 
