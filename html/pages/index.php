@@ -26,19 +26,19 @@
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="index.html">CyberStation</a>
+                <a class="navbar-brand" href="index.php">CyberStation</a>
                 <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
                     ☰
                 </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../pages/sellerInfo/about.html">About Us</a>
+                        <a href="../pages/sellerInfo/about.php">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../pages/auth/login.html">Log In</a>
+                        <a href="../pages/auth/login.php">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../pages/auth/register.html">Register</a>
+                        <a href="../pages/auth/register.php">Register</a>
                     </div>
                     <div class="nav-item">
                         <button id="theme-switch">
@@ -90,7 +90,7 @@
         <div class="row text-center">
             <!-- Graphics Cards -->
             <div class="categories-item gpus">
-                <a href="./categories/graphicsCardsList.html" class="categories-link">
+                <a href="./categories/graphicsCardsList.php" class="categories-link">
                     <i class="fa-solid fa-fax categories-icon fa-4x"></i>
                     <h3>Graphics Cards</h3>
                 </a>
@@ -98,7 +98,7 @@
 
             <!-- Laptops -->
             <div class="categories-item laptops">
-                <a href="./categories/laptopsList.html" class="categories-link">
+                <a href="./categories/laptopsList.php" class="categories-link">
                     <i class="fa-solid fa-laptop categories-icon fa-4x"></i>
                     <h3>Laptops</h3>
                 </a>
@@ -106,7 +106,7 @@
 
             <!-- Keyboards -->
             <div class="categories-item keyboards">
-                <a href="./categories/keyboardsList.html" class="categories-link">
+                <a href="./categories/keyboardsList.php" class="categories-link">
                     <i class="fa-regular fa-keyboard categories-icon fa-4x"></i>
                     <h3>Keyboards</h3>
                 </a>

@@ -24,19 +24,19 @@
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../index.html">CyberStation</a>
+                <a class="navbar-brand" href="../index.php">CyberStation</a>
                 <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
                     ☰
                 </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../sellerInfo/about.html">About Us</a>
+                        <a href="../sellerInfo/about.php">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../auth/login.html">Log In</a>
+                        <a href="../auth/login.php">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../auth/register.html">Register</a>
+                        <a href="../auth/register.php">Register</a>
                     </div>
 
                     <div class="nav-item currency-dropdown">
@@ -74,7 +74,7 @@
         <div class="product-list">
             <!-- 1st Product -->
             <div class="product-item">
-            <a href="../products/gpu/3050_101.html">
+            <a href="../products/gpu/3050_101.php">
                 <div class="product-content">
                     <img src="../../../assets/images/graphicsCard/rtx_3050.jpg" alt="rtx_3050" width="200px">
                     <h4>GeForce RTX 3050</h4>
@@ -98,7 +98,7 @@
     
             <!-- 2nd Product -->
             <div class="product-item">
-                <a href="../products/gpu/4080_102.html">
+                <a href="../products/gpu/4080_102.php">
                     <div class="product-content">
                         <img src="../../../assets/images/graphicsCard/rtx_4080.jpg" alt="rtx_4080" width="200px">
                         <h4>GeForce RTX 4080 Super</h4>
@@ -135,7 +135,7 @@
     
 
     <div class="bottom-container">
-        <a href="../index.html">
+        <a href="../index.php">
             <button type="button" class="home-button"> Back To Home</button>
         </a>
     </div>

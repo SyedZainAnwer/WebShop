@@ -24,19 +24,19 @@
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../index.html">CyberStation</a>
+                <a class="navbar-brand" href="../index.php">CyberStation</a>
                 <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
                     ☰
                 </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../sellerInfo/about.html">About Us</a>
+                        <a href="../sellerInfo/about.php">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../auth/login.html">Log In</a>
+                        <a href="../auth/login.php">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../auth/register.html">Register</a>
+                        <a href="../auth/register.php">Register</a>
                     </div>
 
                     <div class="nav-item currency-dropdown">
@@ -75,7 +75,7 @@
             <!-- 1st Product -->
 
             <div class="product-item">
-                <a href="../products/keyboard/cynosa_201.html">
+                <a href="../products/keyboard/cynosa_201.php">
                     <div class="product-content">
                         <img src="../../../assets/images/keyboards/cynosa_v2.png" alt="cynosa_v2" width="200px">
                         <h4>Razer Cynosa V2</h4>
@@ -98,7 +98,7 @@
 
             <!-- 2nd Product -->
             <div class="product-item">
-                <a href="../products/keyboard/x60_202.html">
+                <a href="../products/keyboard/x60_202.php">
                     <div class="product-content">
                         <img src="../../../assets/images/keyboards/pro_x60.png" alt="pro_x60" width="200px">
                         <h4>Logitech X60 Pro</h4>
@@ -135,7 +135,7 @@
 
 
     <div class="bottom-container">
-        <a href="../index.html">
+        <a href="../index.php">
             <button type="button" class="home-button"> Back To Home</button>
         </a>
     </div>

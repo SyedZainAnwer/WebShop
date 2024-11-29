@@ -43,11 +43,11 @@
             </form>
 
             <div class="account_prompt">
-                <p>Already have an account? <a href="./login.html" class="signup-link">Sign In</a></p>
+                <p>Already have an account? <a href="./login.php" class="signup-link">Sign In</a></p>
             </div>
 
             <div class="shop_prompt">
-                <p>Not ready to sign up? Feel free to <a href="../index.html" class="shop-link">explore our shop</a> instead!</p>
+                <p>Not ready to sign up? Feel free to <a href="../index.php" class="shop-link">explore our shop</a> instead!</p>
             </div>
         </div>
     </div>

@@ -27,19 +27,19 @@
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../../index.html">CyberStation</a>
+                <a class="navbar-brand" href="../../index.php">CyberStation</a>
                 <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
                     ☰
                 </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../../sellerInfo/about.html">About Us</a>
+                        <a href="../../sellerInfo/about.php">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../auth/login.html">Log In</a>
+                        <a href="../../auth/login.php">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../auth/register.html">Register</a>
+                        <a href="../../auth/register.php">Register</a>
                     </div>
                     <div class="nav-item">
                         <button id="theme-switch">
@@ -73,7 +73,7 @@
 
             <div class="product-actions">
                 <button class="product-button">Add to cart</button>
-                <a href="../../index.html">
+                <a href="../../index.php">
                     <button class="back-button">Back to home page</button>
                 </a>
             </div>
