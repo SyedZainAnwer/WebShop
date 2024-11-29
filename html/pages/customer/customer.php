@@ -22,7 +22,7 @@
         User Information
     </h2>
 
-    <form action="../index.html">
+    <form action="../index.php">
         <label for="username">User name:</label><br>
         <input type="text" id="username" name="username" value="username123"><br>
 
@@ -31,6 +31,7 @@
 
         <input type="submit" value="Submit">
     </form>
+    
     <script type="text/javascript" src="../../../js/darkmode.js"></script>
 </body>
 </html>

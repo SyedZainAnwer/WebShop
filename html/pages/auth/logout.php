@@ -26,7 +26,7 @@
 
         <br>
 
-        <a href="../index.html">
+        <a href="../index.php">
             Back to home page
         </a>
     </div>

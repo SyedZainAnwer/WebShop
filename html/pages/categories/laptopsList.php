@@ -24,19 +24,19 @@
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../index.html">CyberStation</a>
+                <a class="navbar-brand" href="../index.php">CyberStation</a>
                 <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
                     ☰
                 </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../sellerInfo/about.html">About Us</a>
+                        <a href="../sellerInfo/about.php">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../auth/login.html">Log In</a>
+                        <a href="../auth/login.php">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../auth/register.html">Register</a>
+                        <a href="../auth/register.php">Register</a>
                     </div>
 
                     <div class="nav-item currency-dropdown">
@@ -75,7 +75,7 @@
             <!-- 1st Product -->
 
             <div class="product-item">
-                <a href="../products/laptop/acer_301.html">
+                <a href="../products/laptop/acer_301.php">
                     <div class="product-content">
                         <img src="../../../assets/images/laptops/acer_nitro5.jpg" alt="acer_nitro5" width="200px">
                         <h4>Acer Nitro 5</h4>
@@ -98,7 +98,7 @@
 
             <!-- 2nd Product -->
             <div class="product-item">
-                <a href="../products/laptop/m3pro_302.html">
+                <a href="../products/laptop/m3pro_302.php">
                     <div class="product-content">
                         <img src="../../../assets/images/laptops/m3_pro_16i.jpeg" alt="m3_pro_16i" width="200px">
                         <h4>M3 Macbook Pro</h4>
@@ -135,7 +135,7 @@
 
 
     <div class="bottom-container">
-        <a href="../index.html">
+        <a href="../index.php">
             <button type="button" class="home-button"> Back To Home</button>
         </a>
     </div>

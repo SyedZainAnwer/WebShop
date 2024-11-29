@@ -41,11 +41,11 @@
             </form>
 
             <div class="account_prompt">
-                <p>Don't have an account? <a href="./register.html" class="signup-link">Sign Up</a></p>
+                <p>Don't have an account? <a href="./register.php" class="signup-link">Sign Up</a></p>
             </div>
 
             <div class="shop_prompt">
-                <p>Not ready to sign in? Feel free to <a href="../index.html" class="shop-link">explore our shop</a>
+                <p>Not ready to sign in? Feel free to <a href="../index.php" class="shop-link">explore our shop</a>
                     instead!</p>
             </div>
         </div>
