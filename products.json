@@ -1,0 +1,68 @@
+{
+    "gpus": [
+        {
+            "id": 101,
+            "name": "GeForce RTX 3050",
+            "description": {
+                "memory": "8GB, GDDR6, 128 bit"
+            },
+            "imagePath": "assets/images/keyboards/rtx_4080.jpg",
+            "price": "300"
+        },
+        {
+            "id": 102,
+            "name": "GeForce RTX 4080 SUPER",
+            "description": {
+                "memory": "16GB, GDDR6X, 256 bit"
+            },
+            "imagePath": "assets/images/graphicsCard/rtx_3050.jpg",
+            "price": "700"
+        }
+    ],
+    "keyboards": [
+        {
+            "id": 201,
+            "name": "Razer Cynosa V2",
+            "description": {
+                "type": "Mechanical",
+                "switches": "Red"
+            },
+            "imagePath": "assets/images/keyboards/cynosa_v2.png",
+            "price": "80"
+        },
+        {
+            "id": 202,
+            "name": "Logitech X60 Pro",
+            "description": {
+                "type": "Mechanical",
+                "switches": "Brown"
+            },
+            "imagePath": "assets/images/keyboards/pro_x60.png",
+            "price": "120"
+        }
+    ],
+    "laptops": [
+        {
+            "id": 301,
+            "name": "Acer Nitro 5",
+            "description": {
+                "RAM": "16GB, GDDR6",
+                "storage": "1TB SSD",
+                "display": "17 inch"
+            },
+            "imagePath": "assets/images/keyboards/acer_nitro5.jpg",
+            "price": "1500"
+        },
+        {
+            "id": 302,
+            "name": "M3 Macbook Pro",
+            "description": {
+                "RAM": "8GB",
+                "storage": "500GB",
+                "display": "16 inch"
+            },
+            "imagePath": "assets/images/laptops/m3_pro_16i.jpeg",
+            "price": "2000"
+        }
+    ]
+}
