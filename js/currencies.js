@@ -7,26 +7,31 @@ const currencyRates = {
     PKR: 277.62
 };
 
-const updatedPrice = (selectedCurrency) => {
+const updatePrices = (selectedCurrency) => {
     const conversionRate = currencyRates[selectedCurrency];
 
     document.querySelectorAll(".product-item").forEach((product) => {
         const actualPrice = product.querySelector(".product-price");
         const taxedPrice = product.querySelector(".taxed-price");
+        const quantityDropdown = product.querySelector(".quantity-dropdown");
 
         const basePrice = parseFloat(actualPrice.dataset.basePrice);
+        const selectedQuantity = parseInt(quantityDropdown.value);
 
         const convertedPrice = (basePrice * conversionRate).toFixed(2);
         const convertedTaxedPrice = (getTotalPrice(basePrice) * conversionRate).toFixed(2);
 
-        actualPrice.textContent = `${selectedCurrency} ${convertedPrice}`;
-        taxedPrice.textContent = `With Tax: ${selectedCurrency} ${convertedTaxedPrice}`;
+        const totalConvertedPrice = (convertedPrice * selectedQuantity).toFixed(2);
+        const totalConvertedTaxedPrice = (convertedTaxedPrice * selectedQuantity).toFixed(2);
+
+        actualPrice.textContent = `${selectedCurrency} ${totalConvertedPrice}`;
+        taxedPrice.textContent = `With Tax: ${selectedCurrency} ${totalConvertedTaxedPrice}`;
     });
-}
+};
 
 document.getElementById("currency").addEventListener("change", (e) => {
     const selectedCurrency = e.target.value;
-    updatedPrice(selectedCurrency);
+    updatePrices(selectedCurrency);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -36,5 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const currencyDropdown = document.getElementById("currency");
-    updatedPrice(currencyDropdown.value);
+    updatePrices(currencyDropdown.value);
+
+    document.querySelectorAll(".quantity-dropdown").forEach((dropdown) => {
+        dropdown.addEventListener("change", () => {
+            const selectedCurrency = document.getElementById("currency").value;
+            updatePrices(selectedCurrency);
+        });
+    });
 });

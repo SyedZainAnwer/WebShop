@@ -124,7 +124,7 @@
     </div>
 
     <div id="collection-section">
-        <h3>Your Collection</h3>
+        <h3>Your Collection <h3 id="totalQuantity"></h3></h3>
         <div class="collection-list">
             <!-- Collection items will dynamically appear here -->
             <div class="collection-empty">
@@ -146,8 +146,8 @@
     
     <script type="module" src="../../../js/currencies.js"></script>
     <script type="text/javascript" src="../../../js/darkmode.js"></script>
-    <script type="text/javascript" src="../../../js/collectionList.js"></script>
-    <script type="text/javascript" src="../../../js/priceCalculation.js"></script>
+    <script type="module" src="../../../js/collectionList.js"></script>
+    <script type="module" src="../../../js/priceCalculation.js"></script>
     <script type="text/javascript" src="../../../js/toggleNavbar.js"></script>
 </body>
 
