@@ -1,3 +1,5 @@
+import { getTotalPrice } from "./priceCalculation.js";
+
 const collectionSection = document.getElementById("collection-section");
 const collectionList = document.querySelector(".collection-list");
 
@@ -11,10 +13,9 @@ document.querySelectorAll(".collection").forEach((btn) => {
         const productPrice = productItem.querySelector(".product-price").textContent.trim();
         const numericProductPrice = parseFloat(productPrice.replace(/[^0-9.]/g, ""));
         const quantity = parseInt(productItem.querySelector(".quantity-dropdown").value)
-        const collectionSection = document.getElementById("collection-section");
-        const collectionList = document.querySelector(".collection-list");
 
-        // const totalPrice = (getTotalPrice(numericProductPrice) * productQuantity).toFixed(2);
+
+        const totalPrice = (getTotalPrice(numericProductPrice) * quantity).toFixed(2);
 
 
         const emptyMessage = document.querySelector(".collection-empty");
@@ -26,9 +27,13 @@ document.querySelectorAll(".collection").forEach((btn) => {
 
         if (existingItem) {
             const quantityElement = existingItem.querySelector(".product-quantity");
+            const priceElement = existingItem.querySelector(".product-price");
+
             const currentQuantity = parseInt(quantityElement.textContent.replace("Quantity: ", ""));
             quantityElement.textContent = `Quantity: ${currentQuantity + quantity}`;
+            priceElement.textContent = `Price: ${totalPrice *(currentQuantity + quantity)}`;
         } else {
+            // const productQuantity = parseInt(document.querySelector('.product-quantity').replace("Quantity: ", ""));
             const collectionItem = document.createElement("div");
             collectionItem.className = "collection-item";
             collectionItem.innerHTML = `
@@ -37,6 +42,7 @@ document.querySelectorAll(".collection").forEach((btn) => {
                     <div>
                         <h4>${productName}</h4>
                         <p class="product-quantity">Quantity: ${quantity}</p>
+                        <p class="product-price"> Price: ${totalPrice}</p>
                     </div>
                 </div>
                 <button class="remove-btn">Remove</button>
