@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+<!--Title-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logitech X60 Pro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About Us</title>
+
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="../../../../css/mystyles.css">
-    <link rel="stylesheet" href="../../../../css/product.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
-        rel="stylesheet">
-
-
+    <link rel="stylesheet" href="../../../css/mystyles.css">
+    <link rel="stylesheet" href="../../../css/about.css">
 
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,27 +19,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
 </head>
 
+
+<!--About Us-->
+
 <body>
+
     <!--Nav Bar Container-->
     <section id="title">
         <div class="container-fluid">
             <!-- Nav Bar -->
             <nav class="navbar">
-                <a class="navbar-brand" href="../../index.php">CyberStation</a>
+                <a class="navbar-brand" href="../index.php">CyberStation</a>
                 <button class="navbar-toggler" aria-label="Toggle navigation" onclick="toggleNavbar()">
                     ☰
                 </button>
                 <div class="navbar-links">
                     <div class="nav-item">
-                        <a href="../../sellerInfo/about.php">About Us</a>
+                        <a href="#">About Us</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../auth/login.php">Log In</a>
+                        <a href="../auth/login.php">Log In</a>
                     </div>
                     <div class="nav-item">
-                        <a href="../../auth/register.php">Register</a>
+                        <a href="../auth/register.php">Register</a>
                     </div>
                     <div class="nav-item">
                         <button id="theme-switch">
@@ -59,33 +63,37 @@
                 </div>
             </nav>
         </div>
-    </section>    
+    </section>
 
-    <div class="product-page-container">
-        <div class="product-image-container">
-            <img src="../../../../assets/images/keyboards/pro_x60.png" alt="pro_x60" class="product-image">
-        </div>
+    <div class=" about_us_main_container">
+        <div class="left_about_bar">
+            <h2>About Us</h2>
+            <p>Welcome to CyberStation! We are three tech enthusiasts with a passion for building and optimizing PCs.
+                As a small team just starting out, our mission is to provide high-quality PC parts at competitive prices
+                with a personal touch.
+                Whether you're a first-time builder or a seasoned pro, we’re here to help you find the perfect
+                components for your next build.
+                <span class="thanks_msg">Thanks for supporting our journey!</span>
+            </p>
 
-        <div class="product-details">
-            <h3 class="product-title">Logitech X60 Pro</h3>
-            <p class="product-info"><strong>Price:</strong> $120</p>
-            <p class="product-info"><strong>Type:</strong> Mechanical</p>
-            <p class="product-info"><strong>Switches:</strong> Brown</p>
-            <p class="product-info"><strong>Product ID:</strong> 202</p>
-
-            <div class="product-actions">
-                <div>
-                    <button class="product-button">Add to cart</button>
-                </div>
-                <a href="../../index.php">
-                    <button class="back-button">Back to home page</button>
-                </a>
+            <div class="contact_us_button">
+                <a class="" href="mailto:abdullahzeeshan1193@hotmail.com">CONTACT US</a>
             </div>
+
+            <!-- <a href="../index.html">
+                    <button type="button" class="btn home-button"> Back To Home</button>
+                </a> -->
         </div>
+
+        <div class="right_about_bar">
+            <img src="../../../assets/images/landingImage.webp" alt="">
+        </div>
+
     </div>
 
-    <script type="text/javascript" src="../../../../js/darkmode.js"></script>
-    <script type="text/javascript" src="../../../../js/toggleNavbar.js"></script>
+    <script type="text/javascript" src="../../../js/darkmode.js"></script>
+    <script type="text/javascript" src="../../../js/toggleNavbar.js"></script>
+
 </body>
 
 </html>

@@ -1,10 +1,29 @@
+<?php
+
+$category = isset($_GET['category']) ? $_GET['category'] : null;
+
+
+$json_file_path = "../../../products.json";
+$json_data = file_get_contents($json_file_path);
+$data = json_decode($json_data, true);
+
+
+$category_data = isset($data[$category]) ? $data[$category] : [];
+
+
+if (empty($category_data)) {
+    echo "No products found for this category.";
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphics Card Category</title>
+    <title><?php echo ucfirst($category); ?> Category</title>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="../../../css/mystyles.css">
     <link rel="stylesheet" href="../../../css/categories.css">
@@ -65,47 +84,23 @@
                 </div>
             </nav>
         </div>
-    </section>    
+    </section>
 
 
     <div class="product-section">
         <h2>Graphic Cards</h2>
-    
+
         <div class="product-list">
-            <!-- 1st Product -->
-            <div class="product-item">
-            <a href="../products/gpu/3050_101.php">
-                <div class="product-content">
-                    <img src="../../../assets/images/graphicsCard/rtx_3050.jpg" alt="rtx_3050" width="200px">
-                    <h4>GeForce RTX 3050</h4>
-                    <p class="product-price">$300</p>
-                    <p class="taxed-price"><span>With Tax: </span></p>
-                </div>
-            </a>
-                <div class="add-btn-area">
-                    <select class="quantity-dropdown" aria-label="Select quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <button type="button" class="btn add-btn collection">Add To Collections</button>
-                    <button type="button" class="btn add-btn">Add To Cart</button>
-                </div>
-            </div>
-            
-    
-            <!-- 2nd Product -->
-            <div class="product-item">
-                <a href="../products/gpu/4080_102.php">
-                    <div class="product-content">
-                        <img src="../../../assets/images/graphicsCard/rtx_4080.jpg" alt="rtx_4080" width="200px">
-                        <h4>GeForce RTX 4080 Super</h4>
-                        <p class="product-price">$700</p>
-                        <p class="taxed-price"><span>With Tax: </span></p>
-                    </div>
-                </a>
+            <?php foreach ($category_data as $product): ?>
+                <div class="product-item">
+                    <a href="../products/product.php?category=<?php echo $category; ?>&id=<?php echo $product['id']; ?>">
+                        <div class="product-content">
+                            <img src="<?php echo $product['imagePath']; ?>" alt="<?php echo $product['name']; ?>" width="200px">
+                            <h4><?php echo $product['name']; ?></h4>
+                            <p class="product-price">$<?php echo $product['price']; ?></p>
+                            <p class="taxed-price"><span>With Tax: </span></p>
+                        </div>
+                    </a>
                     <div class="add-btn-area">
                         <select class="quantity-dropdown" aria-label="Select quantity">
                             <option value="1">1</option>
@@ -118,13 +113,14 @@
                         <button type="button" class="btn add-btn">Add To Cart</button>
                     </div>
                 </div>
-            
-            <!-- Add more products as needed -->
+            <?php endforeach; ?>
         </div>
     </div>
 
+
     <div id="collection-section">
-        <h3>Your Collection <h3 id="totalQuantity"></h3></h3>
+        <h3>Your Collection <h3 id="totalQuantity"></h3>
+        </h3>
         <div class="collection-list">
             <!-- Collection items will dynamically appear here -->
             <div class="collection-empty">
@@ -132,7 +128,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <div class="bottom-container">
         <a href="../index.php">
@@ -143,7 +139,7 @@
     <footer id="footer">
         <p class="footer-text">© Copyright 2024 CyberStation</p>
     </footer>
-    
+
     <script type="module" src="../../../js/currencies.js"></script>
     <script type="text/javascript" src="../../../js/darkmode.js"></script>
     <script type="module" src="../../../js/collectionList.js"></script>

@@ -1,6 +1,6 @@
 /* Container for the entire product section */
 .product-section {
-    padding: 30px 30px 10.55%; /* Consolidated padding syntax */
+    padding: 30px 30px 10.55%; 
     text-align: center;
     background-color: var(--bg-color);
 }
@@ -8,6 +8,7 @@
 /* Section heading style */
 .product-section h2 {
     margin-bottom: 3%;
+    margin-top: 3%;
     font-size: 2rem;
     color: var(--accent-color);
 }

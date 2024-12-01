@@ -1,3 +1,19 @@
+<?php
+
+$json_data = file_get_contents("../../products.json");
+
+$data = json_decode($json_data, true);
+
+$gpus = $data['gpus'];
+$keyboards = $data['keyboards'];
+$laptops = $data['laptops'];
+
+foreach($gpus as $gpu) {
+    $product_id = $gpu['id'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +106,7 @@
         <div class="row text-center">
             <!-- Graphics Cards -->
             <div class="categories-item gpus">
-                <a href="./categories/graphicsCardsList.php" class="categories-link">
+                <a href="./categories/category.php?category=gpus" class="categories-link">
                     <i class="fa-solid fa-fax categories-icon fa-4x"></i>
                     <h3>Graphics Cards</h3>
                 </a>
@@ -98,7 +114,7 @@
 
             <!-- Laptops -->
             <div class="categories-item laptops">
-                <a href="./categories/laptopsList.php" class="categories-link">
+                <a href="./categories/category.php?category=laptops" class="categories-link">
                     <i class="fa-solid fa-laptop categories-icon fa-4x"></i>
                     <h3>Laptops</h3>
                 </a>
@@ -106,7 +122,7 @@
 
             <!-- Keyboards -->
             <div class="categories-item keyboards">
-                <a href="./categories/keyboardsList.php" class="categories-link">
+                <a href="./categories/category.php?category=keyboards" class="categories-link">
                     <i class="fa-regular fa-keyboard categories-icon fa-4x"></i>
                     <h3>Keyboards</h3>
                 </a>
