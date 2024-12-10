@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart</title>
         <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="/css/mystyles.css">
+        <link rel="stylesheet" href="../../../css/mystyles.css">
         <link rel="stylesheet" href="../../../css/cart.css">
 
     <!-- Google Fonts-->
@@ -16,6 +16,6 @@
         rel="stylesheet">
 </head>
 <body>
-    
+    <h1> Your Cart </h1>
 </body>
 </html>

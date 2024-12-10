@@ -67,6 +67,13 @@ if (empty($category_data)) {
                         </select>
                     </div>
 
+                    <div class="nav-item shopping-cart-icon">  
+                    <a href="../cart/shoppingCart.php">
+                        <img src="../../../assets/images/shopping_cart.svg">
+                        <span id="item-count">0</span>
+                    </a>
+                    </div>
+
                     <div class="nav-item">
                         <button id="theme-switch">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
