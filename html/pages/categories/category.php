@@ -117,7 +117,7 @@ if (empty($category_data)) {
                             <option value="5">5</option>
                         </select>
                         <button type="button" class="btn add-btn collection">Add To Collections</button>
-                        <button type="button" class="btn add-btn">Add To Cart</button>
+                        <button type="button" class="btn addToCart-btn">Add To Cart</button>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -152,6 +152,7 @@ if (empty($category_data)) {
     <script type="module" src="../../../js/collectionList.js"></script>
     <script type="module" src="../../../js/priceCalculation.js"></script>
     <script type="text/javascript" src="../../../js/toggleNavbar.js"></script>
+    <script type="module" src = "../../../js/addToCart.js" defer></script>
 </body>
 
 </html>
