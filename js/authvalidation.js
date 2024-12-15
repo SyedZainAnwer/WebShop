@@ -52,7 +52,7 @@ document.getElementById("registrationForm")?.addEventListener("submit", function
 
     // If valid, proceed
     if (isValid) {
-        alert("Awesome Sauce! You're all set!");
+        document.getElementById("registrationForm").submit();
     }
 });
 
@@ -99,6 +99,6 @@ document.getElementById("loginForm")?.addEventListener("submit", function (event
     }
 
     if (isValid) {
-        alert("Awesome Sauce! You're all set!");
+        document.getElementById("loginForm").submit();
     }
 });

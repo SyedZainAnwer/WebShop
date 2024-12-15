@@ -1,3 +1,32 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $json_file = "../../../users.json";
+    $json_data = file_get_contents($json_file);
+    $users = json_decode($json_data, true);
+
+    $username = trim($_POST['username']);
+    $password = $_POST['password'];
+    $confirmPassword = $_POST['confirmPassword'];
+
+    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+    
+    $new_user = [
+        'id' => count($users) + 1,
+        'username' => $username,
+        'password' => $hashed_password,
+        'role' => 'DEFAULT'
+    ];
+
+    $users[] = $new_user;
+    file_put_contents($json_file, json_encode($users, JSON_PRETTY_PRINT));
+
+    header("Location: ./login.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +37,7 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="../../../css/mystyles.css">
     <link rel="stylesheet" href="../../../css/auth.css">
+    <!-- <link rel="stylesheet" href="../../../users.json"> -->
 
 
     <!-- Mont Google Font -->
@@ -19,8 +49,8 @@
 <body>
     <div class="auth_main_container">
         <h3>Sign Up</h3>
-        <div class="auth_area">
-            <form id="registrationForm">
+        <div class="auth_area"> 
+            <form id="registrationForm" action="./register.php" method="POST">
                 <div class="input_area">
                     <label for="username">Username:</label>
                     <input type="text" id="username" placeholder="Enter your username" name="username" class="input_field" required />
@@ -32,7 +62,7 @@
                     <small class="error" id="passwordError"></small>
                 </div>
                 <div class="input_area">
-                    <label for="confirmPassword">Password:</label>
+                    <label for="confirmPassword">Confirm Password:</label>
                     <input type="password" id="confirmPassword" placeholder="Confirm your password" name="password" class="input_field" required />
                     <small class="error" id="confirmPasswordError"></small>
                 </div>
